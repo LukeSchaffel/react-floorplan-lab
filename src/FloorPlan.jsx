@@ -7,12 +7,24 @@ const FloorPlan = (props) => {
   return ( 
     <>
      <Kitchen />
-     <LivingRoom />
-     <Bedroom bednum={1}/>
-     <Bedroom bednum={2}/>
-     <Bedroom bednum={3}/>
-     <Bath size="half" />
-     <Bath size="full" />
+     <div className="LivingRoom">
+      <LivingRoom />
+     </div>
+     <div className="Bedroom-1">
+      <Bedroom bednum={1}/>
+     </div>
+     <div className="Bedroom-2">
+      <Bedroom bednum={2}/>
+     </div>
+     <div className="Bedroom-3">
+      <Bedroom bednum={3}/>
+     </div>
+     <div className="Half-bath">
+      <Bath size="half" />
+     </div>
+     <div className="Full-bath">
+      <Bath size="full" />
+     </div>
     </>
    );
 }
