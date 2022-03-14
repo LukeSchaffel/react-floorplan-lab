@@ -5,8 +5,10 @@ import Bath from "./Bath";
 
 const FloorPlan = (props) => {
   return ( 
-    <>
-     <Kitchen />
+    <div className="container">
+      <div className="Kitchen">
+        <Kitchen />
+      </div>
      <div className="LivingRoom">
       <LivingRoom />
      </div>
@@ -25,7 +27,7 @@ const FloorPlan = (props) => {
      <div className="Full-bath">
       <Bath size="full" />
      </div>
-    </>
+    </div>
    );
 }
  
